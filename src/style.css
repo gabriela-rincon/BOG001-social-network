@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    height: 7vh;
+    background: #229ACF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
