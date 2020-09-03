@@ -65,5 +65,5 @@ export const handleClick = (e) => {
     window.addEventListener("popstate", () => {
       render(routes[window.location.pathname]);
   });
-  ;
+
 });
