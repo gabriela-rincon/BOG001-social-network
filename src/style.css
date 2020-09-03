@@ -2,14 +2,45 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color: #E5E5E5;
 }
 
 h1 {
+    display: flex;
     font-family: 'Annie Use Your Telescope', cursive;
+    color: #FFFFFF;
 }
 
 p {
+    display: flex;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.Join, .LogIn, .SignIn {
+    width: 8%;
+    height: 5%;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Robot', sans-serif;
+    justify-content: center;
+    background-color: #E57011;
+    border-radius: 10px;
+}
+
+.Log {
+    color: #E57011;
+    font-family: 'Robot', sans-serif;
+}
+
+input {
+    display: flex;
+    border-radius: 5px;
 }
 
 footer {
