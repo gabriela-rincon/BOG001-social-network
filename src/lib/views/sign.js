@@ -1,3 +1,5 @@
+import { handleClick } from "../../main.js";
+
 export function SignIn () {
 
     let thirdView = document.getElementById("container");
@@ -18,14 +20,19 @@ export function SignIn () {
     view.appendChild(form);
 
     let btnSignIn = document.createElement("a");
-    btnSignIn.classList.add("LogIn");
+    btnSignIn.classList.add("SignIn");
     btnSignIn.href= "#/Profile";
     btnSignIn.innerHTML = "Sign In";
     view.appendChild(btnSignIn);
-    btnSignIn.addEventListener("click", (e) =>{
-        handleClick(e);
-    console.log(e);
-    }); 
-
+    btnSignIn.addEventListener("click", () =>{
+        var email = document.getElementById("user").value;
+        var password = document.getElementById("password").value;
+    
+        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            alert(errorMessage);
+           
     return view;
-};
+})})};

@@ -5,6 +5,20 @@ import {SignIn} from './lib/views/sign.js';
 // import Profile from './lib/views/profile.js';
 // import Wall from './lib/views/wall.js';
 
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDQpqmRE7SDOofZfUO27fp4vjLYJzpWDFk",
+    authDomain: "benevole-d33d7.firebaseapp.com",
+    databaseURL: "https://benevole-d33d7.firebaseio.com",
+    projectId: "benevole-d33d7",
+    storageBucket: "benevole-d33d7.appspot.com",
+    messagingSenderId: "400517057071",
+    appId: "1:400517057071:web:cab07bf64150fae1b2d4da",
+    measurementId: "G-B2PM87CH7E"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
 const routes = {
     "/" : Home,
     "#/Home" : Home,
@@ -67,3 +81,4 @@ export const handleClick = (e) => {
   });
 
 });
+
