@@ -31,7 +31,6 @@ const routes = {
 // Queremos renderizar la vista en nuestro HTML   
   const root = document.getElementById("container"); 
   const render = (Component) => {
-      console.log(Component);
       root.innerHTML = "";
       const el = Component();
       if (el instanceof HTMLElement) {
@@ -40,7 +39,6 @@ const routes = {
   };
 
 // Inicializar la página
-  console.log(!window.location.hash)
   if (!window.location.hash) {
       render(routes["/"]);
   } else {

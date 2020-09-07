@@ -15,8 +15,8 @@ export function LogIn () {
 
     let form = document.createElement("form")
     form.innerHTML = `
-    <input type="email" id="user" placeholder="E-mail">
-    <input type="text" id="password" placeholder="Password">`
+    <input type="email" id="emailLog" placeholder="E-mail">
+    <input type="text" id="passwordLog" placeholder="Password">`
     view.appendChild(form);
 
     let btnLogIn = document.createElement("a");
@@ -25,11 +25,34 @@ export function LogIn () {
     btnLogIn.innerHTML = "Log In"
     view.appendChild(btnLogIn);
     btnLogIn.addEventListener("click", (e) =>{
-        handleClick(e);
-    console.log(e);
-    }); console.log(btnLogIn);
 
+        var emailLog = document.getElementById("emailLog").value;
+        var passwordLog = document.getElementById("passwordLog").value;
+
+        firebase.auth().signInWithEmailAndPassword(emailLog, passwordLog).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            alert(errorMessage);
+          }); 
+
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+              // User is signed in.
+              var displayName = user.displayName;
+              var email = user.email;
+              var emailVerified = user.emailVerified;
+              var photoURL = user.photoURL;
+              var isAnonymous = user.isAnonymous;
+              var uid = user.uid;
+              var providerData = user.providerData;
+            } 
+          });
+    });
     return view;
 };
+
+
+
 
 
