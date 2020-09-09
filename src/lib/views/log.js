@@ -26,21 +26,30 @@ export function LogIn () {
     <input type="text" id="password" placeholder="Password">`
     view.appendChild(form);
 
+    function message(errorText){
+
+      //crear un modal
+      console.log(errorText);
+    }
+
     let btnLogIn = document.createElement("a");
     btnLogIn.classList.add("LogIn");
-    btnLogIn.href= "#/Wall";
     btnLogIn.innerHTML = "Log In"
     view.appendChild(btnLogIn);
     btnLogIn.addEventListener("click", (e) =>{
 
-        var emailLog = document.getElementById("email").value;
-        var passwordLog = document.getElementById("password").value;
+        const emailLog = document.getElementById("email").value;
+        const passwordLog = document.getElementById("password").value;
 
-        firebase.auth().signInWithEmailAndPassword(emailLog, passwordLog).catch(function(error) {
+        firebase.auth().signInWithEmailAndPassword(emailLog, passwordLog).then(()=>{
+          console.log("Logueado con éxito")
+          window.location.hash = "#/Wall"
+        })
+        .catch(function(error) {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            alert(errorMessage);
+            message(errorMessage);
           }); 
 
         firebase.auth().onAuthStateChanged(function(user) {
@@ -56,10 +65,15 @@ export function LogIn () {
             } 
           });
     });
+  
+    function messageGoogle(errorText){
+
+      //crear un modal
+      console.log(errorText);
+    }
 
     let logGoogle= document.createElement("a");
     logGoogle.classList.add("LogGoogle");
-    logGoogle.href= "#/Wall";
     logGoogle.innerHTML = "Log in with Google"
     view.appendChild(logGoogle);
     logGoogle.addEventListener("click", (e) =>{
@@ -71,12 +85,13 @@ export function LogIn () {
         console.log(token)
         var user = result.user;
         console.log(user)
+        window.location.hash = "#/Wall"
       }).catch(function(error) {
         var errorCode = error.code;
         var errorMessage = error.message;
         var email = error.email;
         var credential = error.credential;
-        //alert(errorMessage);
+        messageGoogle(error.message)
       });
     console.log(provider)
 

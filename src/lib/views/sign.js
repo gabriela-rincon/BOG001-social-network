@@ -26,20 +26,31 @@ export function SignIn () {
     <input type="text" id="password" placeholder="Password">`
     view.appendChild(form);
 
+    function messageSign(errorText){
+
+        //crear un modal
+        console.log(errorText);
+      }
+
     let btnSignIn = document.createElement("a");
     btnSignIn.classList.add("SignIn");
-    btnSignIn.href= "#/Profile";
     btnSignIn.innerHTML = "Sign In";
     view.appendChild(btnSignIn);
-    btnSignIn.addEventListener("click", () =>{
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("password").value;
+    btnSignIn.addEventListener("click", (e) =>{
+        e.preventDefault();
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
     
-        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-            // Handle Errors here.
+    
+        firebase.auth().createUserWithEmailAndPassword(email, password).then(()=>{
+            console.log("cuenta creada con éxito")
+            window.location.hash = "#/Profile"
+        })
+        .catch(function(error) {
+            // Handle Errors here.Crear un catch y un then 
             var errorCode = error.code;
             var errorMessage = error.message;
-            alert(errorMessage);
+            messageSign(error.message);
         });
 
         firebase.auth().onAuthStateChanged(function(user) {
@@ -55,6 +66,12 @@ export function SignIn () {
             };
         });
     });
+
+    function googleSigin(errorText){
+
+        //crear un modal
+        console.log(errorText);
+      }
 
     let signGoogle= document.createElement("a");
     signGoogle.classList.add("signGoogle");
@@ -74,7 +91,7 @@ export function SignIn () {
             var errorMessage = error.message;
             var email = error.email;
             var credential = error.credential;
-            alert(errorMessage);
+            googleSigin(errorMessage);
               });
                  
     });
