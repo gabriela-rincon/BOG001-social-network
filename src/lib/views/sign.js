@@ -23,7 +23,7 @@ export function SignIn () {
     form.innerHTML = `
     <input type="text" id="name" placeholder="Name">
     <input type="email" id="email" placeholder="E-mail">
-    <input type="text" id="password" placeholder="Password">`
+    <input type="password" id="password" placeholder="Password">`
     view.appendChild(form);
 
     function messageSign(errorText){

@@ -23,7 +23,7 @@ export function LogIn () {
     let form = document.createElement("form");
     form.innerHTML = `
     <input type="email" id="email" placeholder="E-mail">
-    <input type="text" id="password" placeholder="Password">`
+    <input type="password" id="password" placeholder="Password">`
     view.appendChild(form);
 
     function message(errorText){

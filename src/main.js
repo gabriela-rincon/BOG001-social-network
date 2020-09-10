@@ -2,8 +2,8 @@
 import {Home} from './lib/views/home.js';
 import {LogIn} from './lib/views/log.js';
 import {SignIn} from './lib/views/sign.js';
-// import Profile from './lib/views/profile.js';
-// import Wall from './lib/views/wall.js';
+import {Profile} from './lib/views/profile.js';
+import {Wall} from './lib/views/wall.js';
 
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -24,8 +24,8 @@ const routes = {
     "#/Home" : Home,
     "#/LogIn" : LogIn,
     "#/SignIn" : SignIn,
-    // "/Profile" : Profile,
-    // "/Wall" : Wall,
+    "#/Profile" : Profile,
+    "#/Wall" : Wall,
 }; 
 
 // Queremos renderizar la vista en nuestro HTML   

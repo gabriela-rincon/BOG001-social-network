@@ -12,7 +12,21 @@ export function Profile () {
     view.appendChild(header);
 
     let form = document.createElement("form")
-    form.innerHTML = `
+    form.innerHTML = ` 
+    <input type="number" id="phone" placeholder="Phone">
+    <input type="email" id="email" placeholder="E-mail">
+    <input type="text" id="about" placeholder="About you">
+    <select> <option>Languages</option>
+    <option>Spanish</option>
+    <option>English</option>
+    <option>French</option>
+    </select> </br>
+    <select> <option>Areas of interest</option>
+    <option>Education</option>
+    <option>Health</option>
+    <option>Technology</option>
+    </select>
+
    `
     view.appendChild(form);
 
@@ -22,8 +36,8 @@ export function Profile () {
     btnSetUp.innerHTML = "Save Changes";
     view.appendChild(btnSetUp);
     btnSetUp.addEventListener("click", (e) =>{
-        handleClick(e);
-    console.log(e);
+    //     handleClick(e);
+    // console.log(e);
     }); 
 
     return view;
