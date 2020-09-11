@@ -1,26 +1,204 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
+body {
+  display: block;
+
+  background-color: #E5E5E5;
+}
+
+
+/*               HOME         */
+.homeWave {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background: #229ACF;
+  padding: 10px 30px;
+
+}
+
+/*
+.homeWave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 50%;
+  height: 80px;
+  background-color: #E5E5E5;
+  right: -5px;
+  top: 20px;
+}
+
+.homeWave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 58%;
+  height: 70px;
+  background-color: #229ACF;
+  left: 0;
+  top: 8px;
+  z-index: 50;
+}
+*/
+
+.textP {
+  padding: 50px 30px;
+}
+
+
+
 h1 {
-    font-family: 'Annie Use Your Telescope', cursive;
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: #FFFFFF;
+  z-index: 10;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*.conteinerbtn{
+  display: flex;
+  justify-content: center;
+}
+*/
+
+.Join,
+.LogIn,
+.SignIn {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: 'Robot', sans-serif;
+  background-color: #E57011;
+  border-radius: 20px;
+  padding: 6px 25px;
+  margin: 15%;
+
+}
+
+
+.Log {
+  color: #E57011;
+  font-family: 'Robot', sans-serif;
+  padding: 6px 25px;
+}
+
+input {
+  display: flex;
+  border-radius: 5px;
 }
 
 footer {
-    height: 7vh;
-    background: #229ACF;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 15px;
-    line-height: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
+  height: 7vh;
+  background: #229ACF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 15px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+/*               SIGN IN         */
+
+.waveSign {
+  position: relative;
+  height: 130px;
+  width: 100%;
+  background: #229ACF;
+  padding: 10px 30px;
+
+}
+
+/*
+  .waveSign:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 50%;
+    height: 80px;
+    background-color: #E5E5E5;
+    right: -5px;
+    top: 20px;
+  }
+  
+  .waveSign:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 58%;
+    height: 70px;
+    background-color: #229ACF;
+    left: 0;
+    top: 8px;
+    z-index: 50;
+  }
+  */
+
+#close {
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.welcome {
+  font-size: 25px;
+  padding: 30px 0px 0px 50px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.create {
+  font-size: 15px;
+  padding: 0px 0px 0px 80px;
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  border-radius: 8px;
+  width: 210px;
+  background-color: #E5E5E5;
+  margin: 10px 80px;
+  padding: 10px;
+  border: none;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+
+#name {
+  margin-top: 100px;
+}
+
+.btnSignIn {
+  display: block;
+  width: 130px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: 'Robot', sans-serif;
+  background-color: #E57011;
+  border-radius: 20px;
+  padding: 6px 25px;
+  margin: 50px 35%;
 }
