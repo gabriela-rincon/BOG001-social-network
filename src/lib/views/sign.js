@@ -11,8 +11,12 @@ export function SignIn() {
   let header = document.createElement("div");
   header.classList.add("waveSign")
   header.innerHTML = `
+  
         <h1 class="welcome"> Welcome!</h1> <h1 class="create"> Create account!</h1>
-        <button id= "close" href="/"> X </button>`
+        <button id= "close" href="/"> X </button>     
+        <div class="wrapper">
+        <div class="wave"></div>
+        </div>`
   view.appendChild(header);
 
   let btnClose = document.getElementById("close");
@@ -60,7 +64,7 @@ export function SignIn() {
   let signGoogle = document.createElement("a");
   signGoogle.classList.add("signGoogle");
   signGoogle.href = "#/Wall";
-  signGoogle.innerHTML = "Sign in with Google"
+  signGoogle.innerHTML = `<img src="/src/Imagenes/googleIcono.png"/> <p>Sign in with Google</p> `
   view.appendChild(signGoogle);
   signGoogle.addEventListener("click", (e) => {
 

@@ -11,7 +11,7 @@ body {
 }
 
 
-/*               HOME         */
+/*-------------------------HOME-------------------------*/
 .homeWave {
   position: relative;
   height: 50px;
@@ -52,6 +52,11 @@ body {
   padding: 50px 30px;
 }
 
+.textP img {
+  width: 300px;
+  margin: 10px;
+}
+
 
 
 h1 {
@@ -76,7 +81,6 @@ a {
 */
 
 .Join,
-.LogIn,
 .SignIn {
   color: #FFFFFF;
   font-size: 14px;
@@ -113,11 +117,11 @@ footer {
   color: #FFFFFF;
 }
 
-/*               SIGN IN         */
+/* -------------------------SIGN IN -------------------------*/
 
 .waveSign {
   position: relative;
-  height: 130px;
+  height: 120px;
   width: 100%;
   background: #229ACF;
   padding: 10px 30px;
@@ -151,6 +155,44 @@ footer {
   }
   */
 
+/* ------------------------- WAVE  ------------------------- */
+
+.wrapper {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.wave {
+  width: 1000px;
+  height: 1025px;
+  position: absolute;
+  top: -90%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -870px;
+  border-radius: 35%;
+  background: #229ACF;
+  animation: wave 20s infinite linear;
+}
+
+@keyframes wave {
+  from {
+    transform: rotate(deg);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------------- END  WAVE ------------------------- */
+
+
 #close {
   border-radius: 50px;
   width: 25px;
@@ -165,13 +207,15 @@ footer {
   font-size: 25px;
   padding: 30px 0px 0px 50px;
   font-family: 'Roboto', sans-serif;
+  position: absolute;
 
 }
 
 .create {
   font-size: 15px;
-  padding: 0px 0px 0px 80px;
+  padding: 65px 0px 0px 80px;
   font-family: 'Roboto', sans-serif;
+  position: absolute;
 }
 
 input {
@@ -187,12 +231,12 @@ input {
 }
 
 #name {
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
 .btnSignIn {
   display: block;
-  width: 130px;
+  width: 125px;
   text-align: center;
   color: #FFFFFF;
   font-size: 14px;
@@ -201,4 +245,131 @@ input {
   border-radius: 20px;
   padding: 6px 25px;
   margin: 50px 35%;
+}
+
+.signGoogle {
+  display: flex;
+  justify-content: center;
+  color: #229ACF;
+  font-family: 'Roboto', sans-serif;
+  margin: 15px 0;
+}
+
+.signGoogle img {
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+}
+
+.signGoogle p {
+  margin: 18px 0px;
+  font-size: 15px;
+}
+
+/* ------------------------- LOGIN------------------------- */
+
+.waveLog {
+  position: relative;
+  height: 120px;
+  width: 100%;
+  background: #229ACF;
+  padding: 10px 30px;
+
+}
+
+
+.welcome {
+  font-size: 25px;
+  padding: 30px 0px 0px 50px;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+
+}
+
+.welcomeBack {
+  font-size: 15px;
+  padding: 65px 0px 0px 130px;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+}
+
+
+.LogGoogle {
+  display: flex;
+  justify-content: center;
+  color: #229ACF;
+  font-family: 'Roboto', sans-serif;
+  margin: 15px 0;
+}
+
+.LogGoogle img {
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+}
+
+.LogGoogle p {
+  margin: 18px 0px;
+  font-size: 15px;
+}
+
+.LogIn {
+  display: block;
+  width: 125px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: 'Robot', sans-serif;
+  background-color: #E57011;
+  border-radius: 20px;
+  padding: 6px 25px;
+  margin: 50px 35%;
+}
+
+.formLogin {
+  margin-top: 4000px;
+}
+
+.loginInput1 {
+  border-radius: 8px;
+  width: 210px;
+  background-color: #E5E5E5;
+  margin-top: 70px;
+  padding: 10px;
+  border: none;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+
+.loginInput {
+  border-radius: 8px;
+  width: 210px;
+  background-color: #E5E5E5;
+
+  margin: 10px 80px;
+  padding: 10px;
+  border: none;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+
+.LogGoogle {
+  display: flex;
+  justify-content: center;
+  color: #229ACF;
+  font-family: 'Roboto', sans-serif;
+  margin: 48px 0;
+}
+
+.LogGoogle img {
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+}
+
+.LogGoogle p {
+  margin: 18px 0px;
+  font-size: 15px;
 }
