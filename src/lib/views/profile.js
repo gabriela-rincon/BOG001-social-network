@@ -16,7 +16,6 @@ export function Profile () {
     <image
     `*/
 
-
     let name = document.getElementById("name").value;
     name.innerHTML
 
