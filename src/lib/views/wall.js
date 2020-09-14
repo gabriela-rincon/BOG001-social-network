@@ -18,6 +18,48 @@ export function Wall () {
     `
     view.appendChild(header);
 
+    let posts= document.createElement("div");
+    posts.classList.add("postSpace");
+    posts.innerHTML=`
+    <ul> 
+        <li class ="listPost">
+        <h2>User Name   Location  Time</h2>
+        <p> Description </p>
+        <button id="favorite">Favorite</button>
+        <button id="like"> Like</button>
+        <button id="comment">Comment</button>
+        </li>
+    </ul>
+    `
+    view.appendChild(posts);
+    // Un evento que confirma si el usuario est alogueado o no
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            firebase.firestore.collection("Posts")
+                .get()
+                .then((snapshot)=>{
+                
+
+                });
+        }else {
+            console.log("sign out")
+        }
+    })
+
+          /* User is signed in.
+          var displayName = user.displayName;
+          var email = user.email;
+          var emailVerified = user.emailVerified;
+          var photoURL = user.photoURL;
+          var isAnonymous = user.isAnonymous;
+          var uid = user.uid;
+          var providerData = user.providerData;
+          console.log("sign in")
+        } else { 
+            console.log("sign out")
+        }*/
+      //});
+
     let profile = document.getElementById("profile");
     profile.addEventListener("click", (e) => {
           window.location.hash = "#/Profile"
