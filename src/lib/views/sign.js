@@ -1,8 +1,6 @@
-import {
-  handleClick
-} from "../../main.js";
+import {handleClick} from "../../main.js";
 
-export function SignIn() {
+export function SignIn () {
 
   let thirdView = document.getElementById("container");
 
@@ -11,8 +9,8 @@ export function SignIn() {
   let header = document.createElement("div");
   header.classList.add("waveSign")
   header.innerHTML = `
-  
-        <h1 class="welcome"> Welcome!</h1> <h1 class="create"> Create account!</h1>
+        <h1 class="welcome"> Welcome!</h1> 
+        <h1 class="create"> Create account!</h1>
         <button id= "close" href="/"> X </button>     
         <div class="wrapper">
         <div class="wave"></div>
@@ -28,15 +26,14 @@ export function SignIn() {
   form.innerHTML = `
     <input type="text" id="name" placeholder="Name">
     <input type="email" id="email" placeholder="E-mail">
-    <input type="text" id="password" placeholder="Password">`
+    <input type="password" id="password" placeholder="Password">`
   view.appendChild(form);
 
   let btnSignIn = document.createElement("a");
   btnSignIn.classList.add("btnSignIn");
-  btnSignIn.href = "#/Profile";
   btnSignIn.innerHTML = "Sign In";
   view.appendChild(btnSignIn);
-  btnSignIn.addEventListener("click", () => {
+  btnSignIn.addEventListener("click", (e) => {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 

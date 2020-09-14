@@ -6,10 +6,8 @@
 
 body {
   display: block;
-
   background-color: #E5E5E5;
 }
-
 
 /*-------------------------HOME-------------------------*/
 .homeWave {
@@ -21,33 +19,6 @@ body {
 
 }
 
-/*
-.homeWave:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 50%;
-  height: 80px;
-  background-color: #E5E5E5;
-  right: -5px;
-  top: 20px;
-}
-
-.homeWave:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 58%;
-  height: 70px;
-  background-color: #229ACF;
-  left: 0;
-  top: 8px;
-  z-index: 50;
-}
-*/
-
 .textP {
   padding: 50px 30px;
 }
@@ -56,8 +27,6 @@ body {
   width: 300px;
   margin: 10px;
 }
-
-
 
 h1 {
   font-family: 'Annie Use Your Telescope', cursive;
@@ -74,14 +43,7 @@ a {
   text-decoration: none;
 }
 
-/*.conteinerbtn{
-  display: flex;
-  justify-content: center;
-}
-*/
-
-.Join,
-.SignIn {
+.Join, .SignIn {
   color: #FFFFFF;
   font-size: 14px;
   font-family: 'Robot', sans-serif;
@@ -91,7 +53,6 @@ a {
   margin: 15%;
 
 }
-
 
 .Log {
   color: #E57011;
@@ -127,33 +88,6 @@ footer {
   padding: 10px 30px;
 
 }
-
-/*
-  .waveSign:before {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 50%;
-    height: 80px;
-    background-color: #E5E5E5;
-    right: -5px;
-    top: 20px;
-  }
-  
-  .waveSign:after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 58%;
-    height: 70px;
-    background-color: #229ACF;
-    left: 0;
-    top: 8px;
-    z-index: 50;
-  }
-  */
 
 /* ------------------------- WAVE  ------------------------- */
 
@@ -192,7 +126,6 @@ footer {
 
 /* ------------------------- END  WAVE ------------------------- */
 
-
 #close {
   border-radius: 50px;
   width: 25px;
@@ -208,7 +141,6 @@ footer {
   padding: 30px 0px 0px 50px;
   font-family: 'Roboto', sans-serif;
   position: absolute;
-
 }
 
 .create {
@@ -274,16 +206,13 @@ input {
   width: 100%;
   background: #229ACF;
   padding: 10px 30px;
-
 }
-
 
 .welcome {
   font-size: 25px;
   padding: 30px 0px 0px 50px;
   font-family: 'Roboto', sans-serif;
   position: absolute;
-
 }
 
 .welcomeBack {
@@ -292,7 +221,6 @@ input {
   font-family: 'Roboto', sans-serif;
   position: absolute;
 }
-
 
 .LogGoogle {
   display: flex;
