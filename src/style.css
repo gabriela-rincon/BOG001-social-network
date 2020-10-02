@@ -421,6 +421,12 @@ input {
   text-align: center;
 }
 
+.backgroundHeader {
+  background-color: #229ACF;
+  width: 100%;
+  height: 130px;
+}
+
 .modal-window {
 
   display: none;
