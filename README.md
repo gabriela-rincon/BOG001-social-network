@@ -44,16 +44,16 @@ El objetivo principal de aprendizaje de este proyecto es construir una
 
 ### HTML y CSS
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
+* [x] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+* [x] Uso de selectores de CSS.
+* [x] Construir tu aplicación respetando el diseño realizado (maquetación).
 * [ ] [Uso de flexbox en CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ### DOM y Web APIs
 
-* [ ] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
-* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
+* [x] Uso de selectores del DOM.
+* [x] Manejo de eventos del DOM.
+* [x] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 * [ ] [History API.](https://developer.mozilla.org/es/docs/DOM/Manipulando_el_historial_del_navegador)
 * [ ] [localStorage.](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage)
@@ -79,15 +79,15 @@ El objetivo principal de aprendizaje de este proyecto es construir una
 
 ### Estructura del código y guía de estilo
 
-* [ ] Organizar y dividir el código en módulos (Modularización)
+* [x] Organizar y dividir el código en módulos (Modularización)
 * [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
 * [ ] Uso de linter (ESLINT)
 
 ### Git y Github
 
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
-* [ ] Colaboración en Github (branches | pull requests | |tags)
+* [x] Uso de comandos de git (add | commit | pull | status | push)
+* [x] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+* [x] Colaboración en Github (branches | pull requests | |tags)
 * [ ] Organización en Github (projects | issues | labels | milestones)
 
 ### Firebase
